@@ -40,5 +40,18 @@ public class compte {
         return null;
     }
 
+    public compte(String proprietaire,int numero, int solde, int decouvert) {
+        this.proprietaire = proprietaire;
+        this.numero = numero;
+        this.solde = solde;
+        this.decouvert = decouvert;
+    }
+
+    public compte() {
+        this.proprietaire = proprietaire;
+        this.numero = numero;
+        this.solde = solde;
+        this.decouvert = decouvert;
+    }
 
 }

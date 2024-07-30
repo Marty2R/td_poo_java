@@ -20,14 +20,14 @@ public class Client {
         return null;
     }
 
-    public static void main(String[] args) {
+    public Client(String prenom, String nom) {
+        this.prenom = prenom;
+        this.nom = nom;
+    }
 
-        Client premierClient = new Client();
-        premierClient.prenom = "Louis";
-        premierClient.nom = "Bagatti";
-
-        System.out.println(premierClient.toString());
-
+    public Client(){
+        this.prenom = prenom;
+        this.nom = nom;
     }
 
 }
