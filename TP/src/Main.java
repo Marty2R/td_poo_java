@@ -11,13 +11,21 @@ public class Main {
             client.setNom("Bugatti");
             System.out.println(client.toString());
 
-        // COMPTE
-        compteCourrant compte = new compteCourrant();
+        // COMPTE COURRANT
+        compteCourant compte = new compteCourant();
             compte.setProprietaire("Louis");
             compte.setNumero(123456789);
             compte.setsolde(45);
             compte.setDecouvert(0);
             System.out.println(compte.toString());
+
+        // COMPTE EPARGNE
+        compteEpargne compteepargne = new compteEpargne();
+            compteepargne.setProprietaire("Louis");
+            compteepargne.setNumero(123456789);
+            compteepargne.setsolde(45);
+            compteepargne.setDecouvert(0);
+            System.out.println(compteepargne.toString());
 
     }
 }

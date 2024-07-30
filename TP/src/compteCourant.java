@@ -1,4 +1,4 @@
-public class compteCourrant {
+public class compteCourant {
     private String proprietaire;
     private int numero;
     private int solde;
@@ -40,14 +40,14 @@ public class compteCourrant {
         return null;
     }
 
-    public compteCourrant(String proprietaire,int numero, int solde, int decouvert) {
+    public compteCourant(String proprietaire,int numero, int solde, int decouvert) {
         this.proprietaire = proprietaire;
         this.numero = numero;
         this.solde = solde;
         this.decouvert = decouvert;
     }
 
-    public compteCourrant() {
+    public compteCourant() {
         this.proprietaire = proprietaire;
         this.numero = numero;
         this.solde = solde;
