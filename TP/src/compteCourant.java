@@ -25,10 +25,10 @@ public class compteCourant {
         return null;
     }
 
-    public Void setNumero(int numero) {
+    /*public Void setNumero(int numero) {
         this.numero = numero;
         return null;
-    }
+    }*/
 
     public Void setsolde(int solde) {
         this.solde = solde;

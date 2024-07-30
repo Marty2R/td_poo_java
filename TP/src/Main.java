@@ -12,12 +12,12 @@ public class Main {
             System.out.println(client.toString());
 
         // COMPTE COURRANT
-        compteCourant compte = new compteCourant();
-            compte.setProprietaire("Louis");
-            compte.setNumero(123456789);
-            compte.setsolde(45);
-            compte.setDecouvert(0);
-            System.out.println(compte.toString());
+            compteCourant comptecourant = new compteCourant();
+            comptecourant.setProprietaire("Louis");
+            //comptecourant.setNumero(123456789);
+            comptecourant.setsolde(45);
+            comptecourant.setDecouvert(0);
+            System.out.println(comptecourant.toString());
 
         // COMPTE EPARGNE
         compteEpargne compteepargne = new compteEpargne();
