@@ -12,7 +12,7 @@ public class Main {
             System.out.println(client.toString());
 
         // COMPTE
-        compte compte = new compte();
+        compteCourrant compte = new compteCourrant();
             compte.setProprietaire("Louis");
             compte.setNumero(123456789);
             compte.setsolde(45);
