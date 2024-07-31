@@ -11,12 +11,21 @@ public class CompteCourant extends Compte {
     }
 
     public CompteCourant(Client proprietaire, int numero, long solde, int decouvert) {
-        super(proprietaire, solde, decouvert);
+        super(proprietaire, numero, solde);
         this.decouvert = decouvert;
     }
 
     public CompteCourant() {
 
+    }
+
+    @Override
+    public double retirer(double solde, int retrait) {
+        if (this.getSolde() - retrait < decouvert) {
+            setSolde(this.getSolde() - retrait);
+            System.out.println("Nouveau solde : " + this.getSolde());
+        }
+        return this.getSolde();
     }
 
 }

@@ -13,9 +13,14 @@ public class Main {
             System.out.println("------------------");
 
         // COMPTE COURRANT
-        CompteCourant comptecourant = new CompteCourant(client, 987654321, 1000, 300);
+        CompteCourant comptecourant = new CompteCourant(client, 987654321, 200, 300);
             System.out.println("COMPTE COURANT");
             System.out.println(comptecourant.getProprietaire().toString());
+            System.out.println("Solde : " + comptecourant.getSolde());
+            System.out.println("Découvert : " + comptecourant.getDecouvert());
+            System.out.println("------------------");
+            System.out.println("-- Retrait compte courant --");
+            System.out.println(comptecourant.retirer(comptecourant.getSolde(), 100));
             System.out.println("------------------");
 
         // COMPTE EPARGNE

@@ -38,7 +38,10 @@ abstract class Compte {
         this.solde = solde;
     }
 
-    public void retirer(int montant) {
-
+    public double retirer(double solde, int retrait) {
+        if (this.getSolde() - retrait < 0) {
+            setSolde(this.getSolde() - retrait);
+        }
+        return this.getSolde();
     }
 }
