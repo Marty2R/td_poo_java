@@ -3,29 +3,26 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("--- Hello Word ---");
+        System.out.println("---- TP Banque ----");
+        System.out.println("------------------");
 
         // CLIENT
-        Client client = new Client();
-            client.setPrenom("Louis");
-            client.setNom("Bugatti");
-            System.out.println(client.toString());
+        Client client = new Client("Louis", "Bugatti");
+            System.out.println(client.getPrenom());
+            System.out.println(client.getNom());
+            System.out.println("------------------");
 
         // COMPTE COURRANT
-            compteCourant comptecourant = new compteCourant();
-            comptecourant.setProprietaire("Louis");
-            //comptecourant.setNumero(123456789);
-            comptecourant.setsolde(45);
-            comptecourant.setDecouvert(0);
-            System.out.println(comptecourant.toString());
+        CompteCourant comptecourant = new CompteCourant(client, 987654321, 1000, 300);
+            System.out.println("COMPTE COURANT");
+            System.out.println(comptecourant.getProprietaire().toString());
+            System.out.println("------------------");
 
         // COMPTE EPARGNE
-        compteEpargne compteepargne = new compteEpargne();
-            compteepargne.setProprietaire("Louis");
-            compteepargne.setNumero(123456789);
-            compteepargne.setsolde(45);
-            compteepargne.setDecouvert(0);
-            System.out.println(compteepargne.toString());
-
+        CompteEpargne compteepargne = new CompteEpargne(client, 123456789, 50, 100);
+            System.out.println("COMPTE EPARGNE");
+            System.out.println(compteepargne);
+            System.out.println(compteepargne.getProprietaire().toString());
+            System.out.println("------------------");
     }
 }

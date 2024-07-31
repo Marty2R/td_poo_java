@@ -26,8 +26,14 @@ public class Client {
     }
 
     public Client(){
-        this.prenom = prenom;
-        this.nom = nom;
+
+    }
+
+    public String toString() {
+        String resultat =  super.toString() ;
+        resultat +=  "\nNom : " + nom ;
+        resultat +=  "\nPrénom : " + prenom ;
+        return resultat ;
     }
 
 }
