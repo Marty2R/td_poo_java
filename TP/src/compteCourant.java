@@ -10,13 +10,9 @@ public class CompteCourant extends Compte {
         return null;
     }
 
-    public CompteCourant(Client proprietaire, int numero, long solde, int decouvert) {
-        super(proprietaire, numero, solde);
+    public CompteCourant(Client proprietaire, long solde, int decouvert) {
+        super(proprietaire, solde);
         this.decouvert = decouvert;
-    }
-
-    public CompteCourant() {
-
     }
 
     @Override

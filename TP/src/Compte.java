@@ -1,16 +1,14 @@
 abstract class Compte {
     private Client proprietaire;
-    private long numero;
+    private final long numero;
     private double solde;
+    static int compter;
 
-    public Compte(Client proprietaire,long numero, double solde) {
+    public Compte(Client proprietaire, double solde) {
+        compter++;
         this.proprietaire = proprietaire;
-        this.numero = numero;
+        this.numero = compter;
         this.solde = solde;
-    }
-
-    public Compte() {
-
     }
 
     public Client getProprietaire() {
@@ -28,10 +26,6 @@ abstract class Compte {
     public Client setProprietaire(Client proprietaire) {
         this.proprietaire = proprietaire;
         return proprietaire;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public void setSolde(double solde) {

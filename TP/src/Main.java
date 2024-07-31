@@ -13,9 +13,10 @@ public class Main {
             System.out.println("------------------");
 
         // COMPTE COURRANT
-        CompteCourant comptecourant = new CompteCourant(client, 987654321, 200, 300);
+        CompteCourant comptecourant = new CompteCourant(client, 200, 300);
             System.out.println("COMPTE COURANT");
             System.out.println(comptecourant.getProprietaire().toString());
+            System.out.println("Numero compte : " + comptecourant.getNumero());
             System.out.println("Solde : " + comptecourant.getSolde());
             System.out.println("Découvert : " + comptecourant.getDecouvert());
             System.out.println("------------------");
@@ -24,7 +25,7 @@ public class Main {
             System.out.println("------------------");
 
         // COMPTE EPARGNE
-        CompteEpargne compteepargne = new CompteEpargne(client, 123456789, 50, 100);
+        CompteEpargne compteepargne = new CompteEpargne(client, 50, 100);
             System.out.println("COMPTE EPARGNE");
             System.out.println(compteepargne);
             System.out.println(compteepargne.getProprietaire().toString());

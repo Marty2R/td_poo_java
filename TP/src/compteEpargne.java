@@ -9,13 +9,10 @@ public class CompteEpargne extends Compte {
             this.decouvert = decouvert;
         }
 
-        public CompteEpargne(Client proprietaire, int numero, int solde, int decouvert) {
-            super(proprietaire,numero, solde);
+        public CompteEpargne(Client proprietaire, int solde, int decouvert) {
+            super(proprietaire, solde);
             this.decouvert = decouvert;
         }
 
-        public CompteEpargne() {
-
-        }
 
 }
